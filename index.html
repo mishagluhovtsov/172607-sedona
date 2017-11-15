@@ -105,7 +105,37 @@
           <p>Заинтересовались?</p>
           <p>Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <a class="btn-search" href="#">Поиск гостиницы в Седоне</a>
+          <a class="button-search" href="#">Поиск гостиницы в Седоне</a>
+
+          <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+            <p class="search">
+                <label for="date-arrival">Дата заезда:</label>
+                <input id="date-arrival" type="text" name="date-arrival" value="24 Апреля 2017">
+                <button type="button" name="calendar" aria-label="Календарь"></button>
+            </p>
+
+            <p class="search">
+                <label for="date-departure">Дата выезда:</label>
+                <input id="date-departure" type="text" name="date-departure" value="4 июля 2017">
+                <button type="button" name="calendar" aria-label="Календарь"></button>
+            </p>
+
+            <p class="">
+              <label for="adult">Взрослые:</label>
+              <button type="button" name="button-minus" aria-label="Уменьшение"></button>
+              <input id="adult" type="text" name="adult" value="2">
+              <button type="button" name="button-plus" aria-label="Увеличение"></button>
+            </p>
+
+            <p class="">
+              <label for="children">Дети:</label>
+              <button type="button" name="button-minus" aria-label="Уменьшение"></button>
+              <input id="children" type="text" name="children" value="0">
+              <button type="button" name="button-plus" aria-label="Увеличение"></button>
+            </p>
+
+            <button class="button" type="submit">Найти</button>
+          </form>
         </div>
       </div>
 
@@ -119,15 +149,15 @@
 
       <div class="footer-social">
         <ul>
-          <li><a class="social-btn social-btn-tw" href="#">Twitter</a></li>
-          <li><a class="social-btn social-btn-fb" href="#">Facebook</a></li>
-          <li><a class="social-btn social-btn-yt" href="#">Youtube</a></li>
+          <li><a class="social-button social-button-twitter" aria-label="Twitter" href="#"></a></li>
+          <li><a class="social-button social-button-facebook" aria-label="Facebook" href="#"></a></li>
+          <li><a class="social-button social-button-youtube" aria-label="Youtube" href="#"></a></li>
         </ul>
       </div>
 
       <div class="footer-copyright">
         <span>website by</span>
-        <a class="btn" href="#">HTML Academy</a>
+        <a class="button" aria-label="HTML Academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </div>
     </footer>
 
