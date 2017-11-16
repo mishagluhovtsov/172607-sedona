@@ -21,9 +21,61 @@
     </header>
 
     <main class="container">
-      <!-- <section>
-        Форма
-      </section> -->
+
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр услуг</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+                <label for="filter-wi-fi">Wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <div class="">
+              <label for="filter-price-from">От</label>
+              <input type="text" value="0" name="price-from" id="filter-price-from">
+
+              <label for="filter-price-to">До</label>
+              <input type="text" value="3000" name="price-to" id="filter-price-to">
+
+              <input type="range" name="filter-slider" min="0" max="3000" step="1">
+            </div>
+          </fieldset>
+          <button class="filter-button" type="submit">Показать</button>
+        </form>
+      </section>
 
       <div>
         <h2>Найдено: 3</h2>
@@ -108,15 +160,15 @@
 
       <div class="footer-social">
         <ul>
-          <li><a class="social-btn social-btn-twitter" aria-label="Twitter" href="#"></a></li>
-          <li><a class="social-btn social-btn-facebook" aria-label="Facebook" href="#"></a></li>
-          <li><a class="social-btn social-btn-youtube" aria-label="Youtube" href="#"></a></li>
+          <li><a class="social-button social-button-twitter" href="https://twitter.com/"><span class="visually-hidden">Twitter</span></a></li>
+          <li><a class="social-button social-button-facebook" href="https://www.facebook.com/"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="social-button social-button-youtube" href="https://www.youtube.com/"><span class="visually-hidden">Youtube</span></a></li>
         </ul>
       </div>
 
       <div class="footer-copyright">
         <span>website by</span>
-        <a class="btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
 
