@@ -1,0 +1,188 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Header*/
+
+.main-navigation {
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation li {
+  font-weight: bold;
+}
+
+.main-navigation a,
+.site-navigation a {
+  color: #000000;
+}
+
+.main-navigation a:hover,
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.main-navigation a:active,
+.site-navigation a:active {
+  color: #b2b2b2;
+}
+
+.site-navigation a:focus,
+.main-navigation a:focus {
+  color: #766357;
+}
+
+/*Main*/
+
+.promo-title {
+  background-color: #ffffff;
+  line-height: 26px;
+}
+
+.promo-title p:first-child {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.reasons h2 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.reason-blue {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.reason-gray {
+  background-color: #eeeeee;
+}
+
+.features,
+.interest {
+  background-color: #ffffff;
+}
+
+.interest-description p:first-child {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.interest-description p:last-child {
+  line-height: 24px;
+}
+
+.button-search-hotel {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.button-search-hotel:hover {
+  background-color: #604e43;
+}
+
+.button-search-hotel:active {
+  color: #857871;
+  background-color: #503e33;
+}
+
+.search-form {
+  font-weight: bold;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.search-form input[type="text"] {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.search-form input[type="text"]:hover {
+  background-color: #ebebeb;
+}
+
+.search-form input[type="text"]:focus {
+  background-color: #ffffff;
+}
+
+.button-form {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.button-form:hover {
+  background-color: #669ec0;
+}
+
+.button-form:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+/*Footer*/
+
+.main-footer {
+  background-color: #ffffff;
+}
+
+.footer-visitsedona-link {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.footer-copyright span {
+  line-height: 26px;
+  color: #000000;
+}
