@@ -42,31 +42,33 @@ a {
   font-weight: bold;
 }
 
-.main-navigation a,
 .site-navigation a {
   color: #000000;
 }
 
-.main-navigation a:hover,
 .site-navigation a:hover {
   color: #81b3d2;
 }
 
-.main-navigation a:active,
 .site-navigation a:active {
   color: #b2b2b2;
 }
 
-.site-navigation a:focus,
-.main-navigation a:focus {
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a.active,
+.site-navigation a.active:hover,
+.site-navigation a.active:active {
   color: #766357;
 }
 
 /*Main*/
 
 .promo-title {
-  background-color: #ffffff;
   line-height: 26px;
+  background-color: #ffffff;
 }
 
 .promo-title p:first-child {
@@ -185,4 +187,122 @@ a {
 .footer-copyright span {
   line-height: 26px;
   color: #000000;
+}
+
+/*Hotels*/
+
+.filter-form {
+  color: #ffffff;
+
+  background-image: url(../img/hotels-filter-background.jpg);
+  background-repeat: no-repeat;
+}
+
+.filter-form fieldset {
+  border: none;
+}
+
+.filter-form legend {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.filter-form ul {
+  list-style: none;
+}
+
+.filter-price input[type="text"] {
+  font-weight: normal;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.filter-button {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.searching-results,
+.hotels,
+.hotels-footer {
+  background-color: #fefefe;
+}
+
+.searching-results {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.searching-title,
+.hotel-title {
+  font-weight: bold;
+  font-size: 21px;
+  font-weight: 26px;
+  color: #000000;
+}
+
+.hotel-title:hover {
+  color: #81b3d2;
+}
+
+.hotel-title:active {
+  color: #b2b2b2;
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-list-item {
+  color: #b1b1b1;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.active-item {
+  color: #81b3d2;
+  border: none;
+}
+
+.more-info,
+.book-it {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.more-info {
+  background-color: #81b3d2;
+}
+
+.more-info:hover {
+  background-color: #669ec0;
+}
+
+.more-info:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.book-it {
+  background-color: #766357;
+}
+
+.book-it:hover {
+  background-color: #604e43;
+}
+
+.book-it:active {
+  color: #857871;
+  background-color: #503e33;
+}
+
+.hotel-rating {
+  color: #666666;
+  background-color: #f2f2f2;
 }
