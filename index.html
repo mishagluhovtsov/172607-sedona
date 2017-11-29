@@ -38,17 +38,17 @@
           <!-- first row -->
           <div class="reasons-wrapper">
             <section class="reason reason-blue">
-              <h2 class="reason-title">Настоящий городок</h2>
+              <h2>Настоящий городок</h2>
               <span class="reason-number">— №1 —</span>
               <p class="reason-description">Седона — не аттракцион для туристов, там течет своя жизнь</p>
             </section>
 
             <div class="reason-picture">
-              <img src="img/sedona-city.jpg" width="800" height="401" alt="Фото городка Седона">
+              <img src="img/sedona-city.jpg" width="800" height="256" alt="Фото городка Седона">
             </div>
           </div>
 
-        <!-- second row -->
+          <!-- second row -->
           <section class="features">
             <div class="feature-item">
               <h2>Жилье</h2>
@@ -69,11 +69,11 @@
           <!-- third row -->
           <div class="reasons-wrapper">
             <div class="reason-picture">
-              <img src="img/sedona-bridge.jpg" width="800" height="400" alt="Фото моста дяьвола">
+              <img src="img/sedona-bridge.jpg" width="800" height="256" alt="Фото моста дяьвола">
             </div>
 
             <section class="reason reason-blue">
-              <h2 class="reason-title">Там есть<br> мост дьявола</h2>
+              <h2>Там есть<br> мост дьявола</h2>
               <span class="reason-number">— №2 —</span>
               <p class="reason-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </section>
@@ -82,19 +82,19 @@
           <!-- fourth row -->
           <div class="reasons-wrapper">
             <section class="reason reason-gray">
-              <h2 class="reason-title">Небольшая площадь</h2>
+              <h2>Небольшая площадь</h2>
               <span class="reason-number">— №3 —</span>
               <p class="reason-description">Все достопримечательности находятся очень близко</p>
             </section>
 
             <section class="reason reason-gray">
-              <h2 class="reason-title">Красивая дорога</h2>
+              <h2>Красивая дорога</h2>
               <span class="reason-number">— №4 —</span>
               <p class="reason-description">Ехать в седону из Лас-вегаса совсем не скучно!</p>
             </section>
 
             <section class="reason reason-gray">
-              <h2 class="reason-title">Мало туристов</h2>
+              <h2>Мало туристов</h2>
               <span class="reason-number">— №5 —</span>
               <p class="reason-description">Большинство едет в гранд каньон и толпится там</p>
             </section>
@@ -102,16 +102,14 @@
         </section>
 
         <section class="interest">
-          <div class="interest-description">
-            <p>Заинтересовались?</p>
-            <p>Укажите предполагаемые даты поездки,<br>
+          <p>Заинтересовались?</p>
+          <p class="interest-description">Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <a class="button-search-hotel" href="#">Поиск гостиницы в Седоне</a>
-          </div>
+          <a class="button-search-hotel" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
         <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-          <p class="">
+          <p class="date-wrapper">
             <label for="date-arrival">Дата заезда:</label>
             <input id="date-arrival" type="text" name="date-arrival" value="24 Апреля 2017">
             <button class="calendar" type="button">
@@ -119,7 +117,7 @@
             </button>
           </p>
 
-          <p class="">
+          <p class="date-wrapper">
             <label for="date-departure">Дата выезда:</label>
             <input id="date-departure" type="text" name="date-departure" value="4 июля 2017">
             <button class="calendar" type="button">
@@ -127,7 +125,7 @@
             </button>
           </p>
 
-          <p class="">
+          <p class="number-wrapper">
             <label for="adult">Взрослые:</label>
             <button class="button-minus" type="button">
               <span class="visually-hidden">"Уменьшение"</span>
@@ -138,7 +136,7 @@
             </button>
           </p>
 
-          <p class="">
+          <p class="number-wrapper">
             <label for="children">Дети:</label>
             <button class="button-minus" type="button">
               <span class="visually-hidden">"Уменьшение"</span>
