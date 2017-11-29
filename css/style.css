@@ -394,12 +394,11 @@ input[type="radio"].visually-hidden {
 
 .features {
   display: flex;
-  align-items: center;
-  min-height: 330px;
 }
 
-.features-item  {
+.feature-item {
   width: 400px;
+  min-height: 330px;
 }
 
 .interest {
@@ -417,6 +416,28 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  min-height: 120px;
+}
+
+.footer-visitsedona-link,
+.footer-social,
+.footer-copyright {
+  width: 400px;
+}
+
+/*Сетки hotels*/
+
+.filter-form {
+  display: flex;
+  min-height: 217px;
+}
+
+.searching-results {
+  min-height: 86px;
+}
+
+.hotel-item {
+  display: flex;
+  min-height: 150px;
 }
