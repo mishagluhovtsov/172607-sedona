@@ -25,10 +25,16 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -52,17 +58,64 @@ input[type="radio"].visually-hidden {
 /*Header*/
 
 .main-navigation {
+  position: relative;
+  min-height: 56px;
   line-height: 26px;
   color: #000000;
   background-color: #ffffff
 }
 
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  left: 531px;
+  display: block;
+  width: 138px;
+  height: 70px;
+}
+
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .site-navigation li {
+  padding-top: 16px;
+  width: 20%;
   font-weight: bold;
+}
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: auto;
+}
+
+.site-navigation li:nth-child(1) {
+  padding-left: 72px;
+}
+
+.site-navigation li:nth-child(2) {
+  padding-left: 73px
+}
+
+.site-navigation li:nth-child(3) {
+  padding-right: 73px;
+}
+
+.site-navigation li:nth-child(4) {
+  padding-right: 72px;
 }
 
 .site-navigation a {
@@ -85,14 +138,38 @@ input[type="radio"].visually-hidden {
 
 /*Main*/
 
+.promo {
+  min-height: 508px;
+  padding-top: 76px;
+
+  background-image: url("../img/promo-shape.png"), url("../img/promo-background.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom, 50% -56px;
+}
+
 .promo-title {
+  min-height: 216px;
+  padding-top: 59px;
+
   line-height: 26px;
   background-color: #ffffff;
 }
 
 .promo-title p:first-child {
+  margin: 0 380px;
+  margin-bottom: 30px;
+
   font-size: 21px;
   font-weight: bold;
+}
+
+.promo-title p:last-child {
+  margin: 0;
+}
+
+.reasons h2,
+.reasons p {
+  margin: 0;
 }
 
 .reasons h2 {
@@ -100,31 +177,194 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
 }
 
+.reasons-wrapper {
+  display: flex;
+}
+
+.reason {
+  width: 400px;
+  min-height: 256px;
+}
+
 .reason-blue {
   color: #ffffff;
   background-color: #81b3d2;
 }
 
+.reason-blue-one {
+  padding-top: 45px;
+}
+
+.reason-blue-one h2 {
+  margin-right: 138px;
+  margin-left: 138px;
+  margin-bottom: 25px;
+}
+
+.reason-blue-one p {
+  margin-top: 23px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.reason-blue-two {
+  padding-top: 48px;
+}
+
+.reason-blue-two h2 {
+  margin-bottom: 25px;
+}
+
+.reason-blue-two p {
+  margin-top: 23px;
+  margin-right: 48px;
+  margin-left: 48px;
+}
+
 .reason-gray {
+  padding-top: 48px;
   background-color: #eeeeee;
 }
 
-.features,
+.reason-gray h2 {
+  margin-bottom: 25px;
+}
+
+.reason-gray p {
+  margin-top: 23px;
+}
+
+.reason-gray-three h2 {
+  margin-left: 141px;
+  margin-right: 142px;
+}
+
+.reason-gray-three p {
+  margin-left: 95px;
+  margin-right: 96px;
+}
+
+.reason-gray-four h2 {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.reason-gray-four p {
+  margin-left: 68px;
+  margin-right: 68px;
+}
+
+.reason-gray-five h2 {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.reason-gray-five p {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.reason-picture {
+  height: 256px;
+}
+
+.features {
+  display: flex;
+}
+
+.feature-item {
+  position: relative;
+  width: 400px;
+  min-height: 330px;
+  padding-top: 163px;
+}
+
+.feature-item-home::before {
+  content: "";
+
+  position: absolute;
+  top: 60px;
+  left: 162px;
+
+  width: 75px;
+  height: 72px;
+
+  background-image: url("../img/icon-home.svg"); background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature-item-food::before {
+  content: "";
+
+  position: absolute;
+  top: 61px;
+  left: 161px;
+
+  width: 74px;
+  height: 70px;
+
+  background-image: url("../img/icon-food.svg"); background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature-item-gift::before {
+  content: "";
+
+  position: absolute;
+  top: 56px;
+  left: 168px;
+
+  width: 64px;
+  height: 76px;
+
+  background-image: url("../img/icon-gift.svg"); background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature-item h2 {
+  margin-bottom: 26px;
+}
+
+.feature-item-home p {
+  padding-left: 73px;
+  padding-right: 74px;
+}
+
+.feature-item-food p {
+  padding-left: 58px;
+  padding-right: 57px;
+}
+
+.feature-item-gift p {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
 .interest {
-  background-color: #ffffff;
+  min-height: 291px;
+  padding-top: 51px;
 }
 
 .interest p:first-child {
+  margin: 0;
+  margin-bottom: 26px;
+
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
 }
 
 .interest-description {
+  margin: 0;
+  margin-bottom: 47px;
+
   line-height: 24px;
 }
 
 .button-search-hotel {
+  display: inline-block;
+  padding: 30px 139px;
+
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -142,10 +382,14 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form {
+  width: 568px;
+  min-height: 395px;
+
   font-weight: bold;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
+
   color: #000000;
   background-color: #ffffff;
 }
@@ -190,10 +434,24 @@ input[type="radio"].visually-hidden {
   background-color: #5496bd;
 }
 
+.map {
+  min-height: 473px;
+}
+
 /*Footer*/
 
 .main-footer {
+  display: flex;
+  align-items: center;
+  min-height: 120px;
+
   background-color: #ffffff;
+}
+
+.footer-visitsedona-link,
+.footer-social,
+.footer-copyright {
+  width: 400px;
 }
 
 .footer-visitsedona-link {
@@ -219,6 +477,9 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-form {
+  display: flex;
+  min-height: 217px;
+
   color: #ffffff;
 
   background-image: url(../img/hotels-filter-background.jpg);
@@ -269,25 +530,10 @@ input[type="radio"].visually-hidden {
 }
 
 .searching-results {
+  min-height: 86px;
   font-size: 12px;
   line-height: 18px;
   color: #000000;
-}
-
-.searching-title,
-.hotel-title {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  color: #000000;
-}
-
-.hotel-title:hover {
-  color: #81b3d2;
-}
-
-.hotel-title:active {
-  color: #b2b2b2;
 }
 
 .sorting-list {
@@ -313,6 +559,27 @@ input[type="radio"].visually-hidden {
 .sorting-list a.active:active {
   color: #81b3d2;
   border: none;
+}
+
+.hotel-item {
+  display: flex;
+  min-height: 150px;
+}
+
+.searching-title,
+.hotel-title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.hotel-title:hover {
+  color: #81b3d2;
+}
+
+.hotel-title:active {
+  color: #b2b2b2;
 }
 
 .more-info,
@@ -350,94 +617,4 @@ input[type="radio"].visually-hidden {
 .hotel-rating {
   color: #666666;
   background-color: #f2f2f2;
-}
-
-/*Сетки*/
-
-.main-navigation {
-  min-height: 56px;
-}
-
-.main-header-logo {
-  display: block;
-}
-
-.site-navigation {
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-}
-
-.promo {
-  min-height: 508px;
-}
-
-.promo-title {
-  min-height: 216px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.reasons-wrapper {
-  display: flex;
-}
-
-.reason {
-  width: 400px;
-  min-height: 256px;
-}
-
-.reason-picture {
-  height: 256px;
-}
-
-.features {
-  display: flex;
-}
-
-.feature-item {
-  width: 400px;
-  min-height: 330px;
-}
-
-.interest {
-  min-height: 290px;
-}
-
-.search-form {
-  width: 568px;
-  min-height: 395px;
-}
-
-.map {
-  min-height: 473px;
-}
-
-.main-footer {
-  display: flex;
-  align-items: center;
-  min-height: 120px;
-}
-
-.footer-visitsedona-link,
-.footer-social,
-.footer-copyright {
-  width: 400px;
-}
-
-/*Сетки hotels*/
-
-.filter-form {
-  display: flex;
-  min-height: 217px;
-}
-
-.searching-results {
-  min-height: 86px;
-}
-
-.hotel-item {
-  display: flex;
-  min-height: 150px;
 }
