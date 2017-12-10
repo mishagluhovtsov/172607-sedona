@@ -800,9 +800,18 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-on.svg");
 }
 
+.filter-checkbox:disabled + label::before {
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.filter-checkbox:checked:disabled + label::before {
+  background-image: url("../img/checkbox-on-disabled.svg");
+}
+
 .filter-checkbox:focus + label::before {
-  outline: 2px solid #81b3d2;
-  outline-offset: 1px;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
 
 .filter-option {
