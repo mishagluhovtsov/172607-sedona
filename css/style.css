@@ -417,6 +417,10 @@ input[type="radio"].visually-hidden {
   background-color: #cbdda9;
 }
 
+.iframe-map {
+  border: 0;
+}
+
 .search-form {
   position: absolute;
   left: 0;
